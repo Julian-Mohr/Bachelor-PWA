@@ -1,4 +1,5 @@
 # Bachelor-PWA
+Projekt-Name: Ba-PWA
 
 # Beschreibung:
 Dieses Projekt dient der Visualisierung einer Progressive-Web-App (PWA) im Rahmen einer Bachelorarbeit. Die erstellte PWA verfügt über grundlegende Funktionen, wie: Hinzufügen zum Home-Screen, Offline-Nutzung und Push-Benachrichtigung.

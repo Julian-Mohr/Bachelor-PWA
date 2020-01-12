@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bachelorarbeit PWA</title>
+  <!-- materialize icons, css & js -->
+  <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="/css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/img/icons/icon-96x96.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#30a142">
+  <meta name="theme-color" content="#30a142">
+</head>
+<body class="grey lighten-4">
+
+  <!-- Quelle: https://github.com/iamshaunjp/pwa-tutorial-->
+  <!-- top nav -->
+  <nav class="z-depth-0">
+    <div class="nav-wrapper container">
+      <a href="/">Ba<span>PWA</span></a>
+       
+    <span class="right grey-text text-darken-1 uiClass" style="display:none">
+        <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+      </span>
+     <ul class="right">
+            <li class="logged-in" style = "display:none">
+              <a href="#" class="grey-text" id="logout">Logout</a>
+            </li>
+            <li class="logged-out" style = "display:none">
+              <a href="#" class="grey-text modal-trigger" data-target="modal-login">Login</a>
+            </li>
+            <li class="logged-out" style = "display:none">
+              <a href="#" class="grey-text modal-trigger" data-target="modal-signup">Registrierung</a>
+            </li>
+      </span>
+    </ul>
+    
+    </div>
+  </nav>
+
+   <!-- Quelle: https://github.com/iamshaunjp/pwa-tutorial-->
+  <!-- side nav -->
+  <ul id="side-menu" class="sidenav side-menu">
+    <li><a class="subheader">Progressive Web App</a></li>
+    <li><a href="/" class="waves-effect">Notizen</a></li>
+    <li><a href="/pages/about.html" class="waves-effect">Quellen</a></li>
+    <li> <a href="/pages/notification.html" class="waves-effect">Push-Benachrichtigung</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="/pages/contact.html" class="waves-effect">
+      <i class="material-icons">mail_outline</i>Kontakt</a>
+    </li>
+  </ul>
+
+  <!-- Quelle: https://github.com/iamshaunjp/firebase-auth-->
+<!-- SIGN UP MODAL -->
+<div id="modal-signup" class="modal">
+  <div class="modal-content">
+    <h4>Anmelden</h4><br />
+    <form id="signup-form">
+      <div class="input-field">
+        <input type="email" id="signup-email" required />
+        <label for="signup-email">Email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="signup-password" required />
+        <label for="signup-password">Passwort</label>
+      </div>
+      <button class="btn yellow darken-2 z-depth-0">Anmelden</button>
+      <p class= "error pink-text center-align"></p>
+    </form>
+  </div>
+</div>
+
+  <!-- Quelle: https://github.com/iamshaunjp/firebase-auth-->
+<!-- LOGIN MODAL -->
+<div id="modal-login" class="modal">
+  <div class="modal-content">
+    <h4>Login</h4><br />
+    <form id="login-form">
+      <div class="input-field">
+        <input type="email" id="login-email" required />
+        <label for="login-email">Email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="login-password" required />
+        <label for="login-password">Passwort</label>
+      </div>
+      <button class="btn yellow darken-2 z-depth-0">Login</button>
+      <p class= "error pink-text center-align"></p>
+    </form>
+  </div>
+</div>
+
+
+  <!-- content -->
+  <div class="container grey-text conditional"  style="display:none">
+    <h5 class="center flow-text">Julian Mohr</h5>
+    <p >Wirtschaftswissenschaften mit Schwerpunkt Wirtschaftinformatik - 5 Fachsemester</p>
+    <div class="divider"></div>
+    <h6>Bachelorarbeit: Progressive Web Apps</h6>
+    <ul>
+      <li>Lehrstuhl: Wirtschaftinformatik</li>
+      <li>Betreuer: Martin Enders</li>
+    </ul>
+  </div>
+  <div class="loggedOutContent" style= "display: none">
+  </br>
+  <h5 class= "center-align" >Sie müssen sich erst einloggen, um die Inhalte zu sehen!</h5>
+  </br>
+</div>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-messaging.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/ui.js"></script>
+  <script src="/js/firebase-messaging.js"></script>
+  <script src="/js/logOut.js"></script>
+</body>
+</html>

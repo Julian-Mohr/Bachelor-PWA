@@ -4,7 +4,19 @@ Bachelorarbeit: Progressive Web Apps von Julian Mohr
 # Beschreibung:
 Dieses Projekt dient der Visualisierung einer Progressive-Web-App (PWA) im Rahmen einer Bachelorarbeit. Die erstellte PWA verfügt über grundlegende Funktionen, wie: Hinzufügen zum Home-Screen, Offline-Nutzung und Push-Benachrichtigung.
 
-Für die Background-Synchonisation, Versenden der Push-Benachrichtigungen und Authentifizierung wurde Google Firebase verwendet.
+# Tools
+
+Das verwendete IDE war Microsoft Visual Studio Code.
+(Link: https://code.visualstudio.com)
+
+Für den Entwicklungsprozess wurden auf Pakete von Node.js zurückgegriffen.
+(Link: https://nodejs.org/en/)
+
+Für das optische Erscheinungsbild wurden Module von Materialize verwendet.
+(Link: https://materializecss.com/getting-started.html)
+
+Für die Background-Synchonisation, das Versenden der Push-Benachrichtigungen und die Authentifizierung wurde Google Firebase verwendet.
+(https://firebase.google.com)
 
 # Vorgehensweise:
 

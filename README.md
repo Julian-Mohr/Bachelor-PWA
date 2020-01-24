@@ -20,7 +20,7 @@ Für das optische Erscheinungsbild wurden Module von Materialize verwendet.
 
 Für die Background-Synchonisation, das Versenden der Push-Benachrichtigungen und die Authentifizierung wurde Google Firebase verwendet.
 
-(https://firebase.google.com)
+(Link: https://firebase.google.com)
 
 # Vorgehensweise:
 
